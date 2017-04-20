@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - UserManager@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="UserManager">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="athlete"/>
+    <schema id="4" parent="1" name="authenticationAPI"/>
+    <schema id="5" parent="1" name="career-services"/>
+    <schema id="6" parent="1" name="cleaninstall"/>
+    <schema id="7" parent="1" name="countrylist"/>
+    <schema id="8" parent="1" name="Dyson"/>
+    <schema id="9" parent="1" name="easyapp"/>
+    <schema id="10" parent="1" name="emform"/>
+    <schema id="11" parent="1" name="GREEK50"/>
+    <schema id="12" parent="1" name="IMDB"/>
+    <schema id="13" parent="1" name="information_schema"/>
+    <schema id="14" parent="1" name="IP"/>
+    <schema id="15" parent="1" name="is667"/>
+    <schema id="16" parent="1" name="ISEEC"/>
+    <schema id="17" parent="1" name="LN50"/>
+    <schema id="18" parent="1" name="Lubin"/>
+    <schema id="19" parent="1" name="MoviesDB"/>
+    <schema id="20" parent="1" name="musicDB"/>
+    <schema id="21" parent="1" name="mypacedevelopment"/>
+    <schema id="22" parent="1" name="mysql"/>
+    <schema id="23" parent="1" name="pacepath"/>
+    <schema id="24" parent="1" name="paceschools"/>
+    <schema id="25" parent="1" name="PageIntegrity"/>
+    <schema id="26" parent="1" name="performance_schema"/>
+    <schema id="27" parent="1" name="performingarts"/>
+    <schema id="28" parent="1" name="resumein"/>
+    <schema id="29" parent="1" name="SFC"/>
+    <schema id="30" parent="1" name="SMTP_UserManagement"/>
+    <schema id="31" parent="1" name="socialbites"/>
+    <schema id="32" parent="1" name="SOE50"/>
+    <schema id="33" parent="1" name="Submissions"/>
+    <schema id="34" parent="1" name="test"/>
+    <schema id="35" parent="1" name="UnionSquareChess"/>
+    <schema id="36" parent="1" name="usercake"/>
+    <schema id="37" parent="1" name="VinylDB"/>
+    <schema id="38" parent="1" name="VinylsDB"/>
+    <table id="39" parent="2" name="UserDetails"/>
+    <table id="40" parent="2" name="blogcontent"/>
+    <table id="41" parent="2" name="bloglisting"/>
+    <table id="42" parent="2" name="filesRepository"/>
+    <table id="43" parent="2" name="products"/>
+    <table id="44" parent="2" name="user"/>
+    <table id="45" parent="2" name="whomadewho"/>
+    <column id="46" parent="39" name="UserID">
+      <DataType>varchar(120)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="39" name="UserName">
+      <DataType>varchar(150)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="39" name="FirstName">
+      <DataType>varchar(150)|0</DataType>
+    </column>
+    <column id="49" parent="39" name="LastName">
+      <DataType>varchar(150)|0</DataType>
+    </column>
+    <column id="50" parent="39" name="Email">
+      <DataType>varchar(150)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="39" name="Password">
+      <DataType>varchar(1000)|0</DataType>
+    </column>
+    <column id="52" parent="39" name="MemberSince">
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="53" parent="39" name="Active">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="54" parent="39" name="PRIMARY">
+      <ColNames>UserName
+Email</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="55" parent="40" name=" uniqueid">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="56" parent="40" name="blogid">
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="57" parent="40" name="blogcontent">
+      <DataType>longblob|0</DataType>
+    </column>
+    <key id="58" parent="40" name="PRIMARY">
+      <ColNames> uniqueid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="59" parent="41" name="uniqueid">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="60" parent="41" name="blogid">
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="41" name="title">
+      <DataType>varchar(1500)|0</DataType>
+    </column>
+    <column id="62" parent="41" name="datecreated">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="63" parent="41" name="deleteflag">
+      <DataType>int(1)|0</DataType>
+    </column>
+    <column id="64" parent="41" name="active">
+      <DataType>int(1)|0</DataType>
+    </column>
+    <key id="65" parent="41" name="PRIMARY">
+      <ColNames>uniqueid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="66" parent="42" name="unique_ID">
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="67" parent="42" name="file_ID">
+      <DataType>varchar(25)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="42" name="user_id">
+      <DataType>varchar(25)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="69" parent="42" name="current_folder">
+      <DataType>varchar(500)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="70" parent="42" name="destination_folder">
+      <DataType>varchar(500)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="71" parent="42" name="new_file_name">
+      <DataType>varchar(500)|0</DataType>
+    </column>
+    <column id="72" parent="42" name="file_save_folder">
+      <DataType>varchar(500)|0</DataType>
+    </column>
+    <column id="73" parent="42" name="file_temp">
+      <DataType>varchar(500)|0</DataType>
+    </column>
+    <column id="74" parent="42" name="file_size">
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="75" parent="42" name="file_extension">
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="76" parent="42" name="file_name">
+      <DataType>varchar(500)|0</DataType>
+    </column>
+    <column id="77" parent="42" name="actual_url">
+      <DataType>varchar(500)|0</DataType>
+    </column>
+    <column id="78" parent="42" name="created_datetime">
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="79" parent="42" name="IPADDRESS">
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="80" parent="42" name="deleteFlag">
+      <DataType>int(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="81" parent="42" name="file_type">
+      <DataType>varchar(500)|0</DataType>
+    </column>
+    <key id="82" parent="42" name="PRIMARY">
+      <ColNames>unique_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="83" parent="43" name="id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="84" parent="43" name="product_code">
+      <DataType>varchar(60)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="85" parent="43" name="product_name">
+      <DataType>varchar(60)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="86" parent="43" name="product_desc">
+      <DataType>tinytext|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="87" parent="43" name="price">
+      <DataType>decimal(10,2)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="88" parent="43" name="product_code">
+      <ColNames>product_code</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="89" parent="43" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="90" parent="43" name="product_code">
+      <ColNames>product_code</ColNames>
+      <UnderlyingIndexName>product_code</UnderlyingIndexName>
+    </key>
+    <column id="91" parent="44" name="id">
+      <DataType>mediumint(8) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="92" parent="44" name="userid">
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="93" parent="44" name="FirstName">
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="94" parent="44" name="LastName">
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="95" parent="44" name="City">
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="96" parent="44" name="Zip">
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="97" parent="44" name="DateOfBirth">
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="98" parent="44" name="EmailAddress">
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="99" parent="44" name="MemberSince">
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="100" parent="44" name="Active">
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="101" parent="44" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="102" parent="45" name="uniqueid">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="103" parent="45" name="blogid">
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="104" parent="45" name="userid">
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <key id="105" parent="45" name="PRIMARY">
+      <ColNames>uniqueid</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
