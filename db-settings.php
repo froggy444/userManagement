@@ -3,8 +3,8 @@
 //Development Database Information
 $db_host = "localhost"; //Host address (most likely localhost)
 $db_name = "UserManager"; //Name of Database
-$db_user = "root"; //Name of database user
-$db_pass = "darthvader"; //Password for database user
+$db_user = "admin1"; //Name of database user
+$db_pass = "123456"; //Password for database user
 $db_table_prefix = ""; // if the table prefix exists use this variable as a global
 
 
